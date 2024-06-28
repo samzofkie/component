@@ -1,0 +1,11 @@
+{
+  "name": "@samzofkie/component",
+  "version": "2.0.0",
+  "description": "My frontend framework",
+  "main": "Component.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sam Zofkie",
+  "license": "ISC"
+}
