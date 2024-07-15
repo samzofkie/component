@@ -96,6 +96,8 @@ class HTMLAttributesEnsurer(Ensurer):
     attributes = [attr for attr in attributes if attr not in ['border', 'color', 'height', 'width', 'translate']]
     self.output = [attr if attr != 'class' else 'className' for attr in attributes]
     self.output = [attr if attr != 'for' else 'htmlFor' for attr in attributes]
+    self.output = [attr if attr != 'contenteditable' else 'contentEditable' for attr in attributes]
+
 
 
 

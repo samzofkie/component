@@ -46,8 +46,12 @@ class Root {
     this.append(...args);
   }
 
+  // Any value in the options object for which typeof evaluates to 
+  // 'number' will be converted to a string, and `px` will be appended.
   set(options) {
     Object.entries(options).map(([key, value]) => {
+      if (typeof value === 'number')
+        value += 'px';
       if (cssProperties.includes(key)) {
         this.root.style[key] = value;
       } else if (htmlAttributes.includes(key)) {

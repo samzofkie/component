@@ -17,7 +17,7 @@ export const htmlAttributes = [
   'cols',
   'colspan',
   'content',
-  'contenteditable',
+  'contentEditable',
   'controls',
   'coords',
   'data',
